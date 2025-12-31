@@ -1,80 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Love in sensation</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Watch the full video">
-<meta property="og:title" content="Watch Full Video">
-<meta property="og:description" content="Tap play to watch the video">
-<meta property="og:type" content="website">
-
-<style>
-body{
-  margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  background:#0f0f0f;
-  color:#fff;
-}
-
-.container{
-  max-width:960px;
-  margin:auto;
-  padding:16px;
-}
-
-h1{
-  text-align:center;
-  margin-bottom:16px;
-  font-size:26px;
-}
-
-.video-wrapper{
-  width:100%;
-  background:#000;
-  border-radius:10px;
-  overflow:hidden;
-}
-
-.video-wrapper video{
-  width:100%;
-  height:auto;
-  display:block;
-}
-
-.banner{
-  margin:20px 0;
-  text-align:center;
-}
-
-.banner img{
-  max-width:100%;
-  border-radius:6px;
-}
-
-.join-btn{
-  display:block;
-  width:100%;
-  max-width:320px;
-  margin:25px auto;
-  padding:14px 20px;
-  background:#1877f2;
-  color:#fff;
-  text-align:center;
-  text-decoration:none;
-  font-weight:bold;
-  border-radius:40px;
-}
-
-/* FOOTER */
-.footer{
-  margin-top:30px;
-  text-align:center;
-  font-size:12px;
-  opacity:0.6;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no complaints</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            color: black;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        .ad-banner-inside {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 50px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            overflow: hidden;
+        }
+        @media (max-width: 400px) {
+            .ad-banner-inside {
+                width: 95vw;
+                height: 40px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -130,3 +110,4 @@ hs.src = ('//s10.histats.com/js15_as.js');
 
 </body>
 </html>
+
